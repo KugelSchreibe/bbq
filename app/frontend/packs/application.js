@@ -8,7 +8,7 @@ import * as ActiveStorage from "@rails/activestorage"
 import "../styles/aplication.scss"
 import "bootstrap/dist/js/bootstrap"
 
-const images = require.context("../img", true)
+const images = require.context('../img', true)
 
 Rails.start()
 ActiveStorage.start()
