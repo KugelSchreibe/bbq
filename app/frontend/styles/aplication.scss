@@ -1,12 +1,21 @@
 @import "~bootstrap/scss/bootstrap";
 @import "events";
+@import "forms";
 
 .buffer-top {
   margin-top: 20px;
 }
 
+.buffer-top-sm {
+  margin-top: 12px;
+}
+
 .buffer-bottom {
   margin-bottom: 20px;
+}
+
+.buffer-bottom-sm {
+  margin-bottom: 12px;
 }
 
 .buffer-right {

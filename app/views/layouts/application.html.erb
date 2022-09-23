@@ -23,8 +23,7 @@
               <%= link_to "Профиль", current_user, class: 'nav-link active d-block' %>
             </li>
             <li>
-              <%= button_to "Выйти", destroy_user_session_path, method: :delete, class: 'btn btn-link link-danger without_underline px-0',
-                            form: { data: { turbo_confirm: 'Вы уверены?' } } %>
+              <%= button_to "Выйти", destroy_user_session_path, method: :delete, class: 'btn btn-link link-danger without_underline px-0' %>
             </li>
 
           <% else %>
@@ -45,7 +44,7 @@
 
   <div class="container buffer-top">
     <div class="row">
-      <div class="col-lg-9">
+      <div class="col-lg-8 offset-lg-2">
         <% if flash[:notice].present? %>
           <p class="alert alert-secondary text-center">
             <%= flash[:notice] %>
@@ -57,9 +56,9 @@
             <button type="button" class="btn-close float-end" data-bs-dismiss="alert" aria-label="Close"></button>
           </p>
         <% end %>
-
-        <%= yield %>
       </div>
+
+      <%= yield %>
     </div>
 
     <footer>

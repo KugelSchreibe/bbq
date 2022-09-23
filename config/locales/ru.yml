@@ -34,5 +34,9 @@ ru:
     few: '%{count} ошибки'
     many: '%{count} ошибок'
   registration:
-    sign_in: 'Войти'
+    create_profile: 'Создать аккаунт'
     forgot_password: 'Забыли пароль?'
+    log_in: 'Вход'
+    send_reset_password_instructions: 'Отправить письмо'
+  edit:
+    user: 'Редактировать пользователя'
