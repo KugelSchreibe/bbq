@@ -20,10 +20,10 @@
           <% if user_signed_in? %>
 
             <li class="nav-item mx-5">
-              <%= link_to "Профиль", current_user, class: 'nav-link active d-block' %>
+              <%= link_to t('app.account'), current_user, class: 'nav-link active d-block' %>
             </li>
             <li>
-              <%= button_to "Выйти", destroy_user_session_path, method: :delete, class: 'btn btn-link link-danger without_underline px-0' %>
+              <%= button_to t('app.exit'), destroy_user_session_path, method: :delete, class: 'btn btn-link link-danger without_underline px-0' %>
             </li>
 
           <% else %>

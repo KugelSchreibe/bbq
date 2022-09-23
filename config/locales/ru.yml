@@ -19,16 +19,33 @@ ru:
       created: 'Событие было успешно создано!'
       updated: 'Событие было успешно редактировано!'
       deleted: 'Событие было удалено!'
+      actions:
+        create_event: 'Создать событие'
       warnings:
         before_delete: 'Вы уверены, что хотите удалить событие?'
     users:
       created: 'Ваш аккаунт успешно создан!'
       updated: 'Аккаунт успешно редактирован!'
+      actions:
+        change_password: 'Сменить пароль'
   app:
     name: 'Шашлыки'
     company: 'Хороший программист'
+    back: 'Назад'
+    delete: 'Удалить'
+    update: 'Обновить'
+    new_event: 'Новое событие'
+    save: 'Сохранить'
+    account: 'Профиль'
+    exit: 'Выйти'
+    cancel: 'Отмена'
+    organize: 'Организовал'
+    events: 'События'
   notifications:
     are_you_sure: 'Вы уверены?'
+    did_not_organize: 'Пользователь пока не организовал ни одного
+          события'
+    delete_my_account: 'Удалить мой аккаунт?'
   errors:
     one: '%{count} ошибка'
     few: '%{count} ошибки'
@@ -40,3 +57,4 @@ ru:
     send_reset_password_instructions: 'Отправить письмо'
   edit:
     user: 'Редактировать пользователя'
+    account: 'Редактировать профиль'
