@@ -10,7 +10,10 @@ gem 'image_processing', '~> 1.2'
 gem 'devise'
 gem 'devise-i18n'
 gem 'rails-i18n'
-gem 'net-smtp'
+gem 'net-smtp', require: false
+gem 'net-imap', require: false
+gem 'net-pop', require: false
+
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
