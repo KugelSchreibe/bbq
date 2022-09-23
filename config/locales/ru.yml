@@ -31,3 +31,6 @@ ru:
     one: '%{count} ошибка'
     few: '%{count} ошибки'
     many: '%{count} ошибок'
+  registration:
+    sign_in: 'Войти'
+    forgot_password: 'Забыли пароль?'
