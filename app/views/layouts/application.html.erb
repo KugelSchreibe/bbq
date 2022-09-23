@@ -29,10 +29,10 @@
           <% else %>
 
             <li class="nav-item nav-item mx-5">
-              <%= link_to "Войти", new_user_session_path, class: 'link-success without_underline' %>
+              <%= link_to t('registration.log_in'), new_user_session_path, class: 'link-success without_underline' %>
             </li>
             <li class="nav-item">
-              <%= link_to "Регистрация", new_user_registration_path, class: 'link-success without_underline' %>
+              <%= link_to t('registration.reg'), new_user_registration_path, class: 'link-success without_underline' %>
             </li>
 
           <% end %>

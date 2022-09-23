@@ -41,6 +41,10 @@ ru:
     cancel: 'Отмена'
     organize: 'Организовал'
     events: 'События'
+    there_are_in_form: 'В вашей форме'
+    edit: 'Редактировать'
+    change: 'Изменить'
+    forward: 'Готово'
   notifications:
     are_you_sure: 'Вы уверены?'
     did_not_organize: 'Пользователь пока не организовал ни одного
@@ -54,6 +58,7 @@ ru:
     create_profile: 'Создать аккаунт'
     forgot_password: 'Забыли пароль?'
     log_in: 'Вход'
+    reg: 'Регистрация'
     send_reset_password_instructions: 'Отправить письмо'
   edit:
     user: 'Редактировать пользователя'
