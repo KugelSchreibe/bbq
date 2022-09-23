@@ -13,8 +13,6 @@ class AddDeviseToUsers < ActiveRecord::Migration[6.1]
     end
   end
 
-  add_index :users, :reset_password_token, unique: true
-
   def self.down
     raise ActiveRecord::IrreversibleMigration
   end
