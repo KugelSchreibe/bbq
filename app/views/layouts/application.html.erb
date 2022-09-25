@@ -46,15 +46,15 @@
     <div class="row">
       <div class="col-lg-8 offset-lg-2">
         <% if flash[:notice].present? %>
-          <p class="alert alert-secondary text-center">
+          <div class="alert alert-secondary text-center alert-dismissible fade show">
             <%= flash[:notice] %>
             <button type="button" class="btn-close float-end" data-bs-dismiss="alert" aria-label="Close"></button>
-          </p>
-        <% elsif flash[:alert].present? %>
-          <p class="alert alert-danger text-center">
+          </div>
+        <% elsif flash.now[:alert].present? %>
+          <div class="alert alert-danger text-center alert-dismissible fade show">
             <%= flash[:alert] %>
             <button type="button" class="btn-close float-end" data-bs-dismiss="alert" aria-label="Close"></button>
-          </p>
+          </div>
         <% end %>
       </div>
 

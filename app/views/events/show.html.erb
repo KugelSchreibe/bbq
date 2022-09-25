@@ -30,7 +30,7 @@
 
           <%= render partial: 'comments/form', locals: {comment: @new_comment || @event.comments.build} %>
 
-          <div class="buffer-both">
+          <div class="buffer-both mt-5">
             <div class="buffer-both">
               <%= render partial: 'comments/comment', collection: @event.comments.except(@new_comment) %>
             </div>
@@ -63,7 +63,7 @@
         </div>
 
         <% unless current_user_can_edit?(@event) %>
-          <div class="buffer-top buffer-bottom">
+          <div class="my-5">
             <%= render partial: 'subscriptions/form', locals: {subscription: @new_subscription || @event.subscriptions.build} %>
           </div>
         <% end %>

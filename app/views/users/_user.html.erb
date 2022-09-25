@@ -2,7 +2,7 @@
   <div class="user-avatar d-flex justify-content-center">
     <%= image_pack_tag(user_avatar(user), class: 'img-icon') %>
   </div>
-  <div class="user-name text-center buffer-top-sm">
+  <div class="user-name text-center mt-1">
     <% if request.path == user_path(user) %>
       <%= user.name %>
     <% else %>

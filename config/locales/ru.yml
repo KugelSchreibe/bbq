@@ -16,9 +16,9 @@ ru:
         description: 'Описание'
       comment:
         body: 'Комментарий'
-        user_name: 'Ваше имя'
+        user_name: 'Имя'
       subscription:
-        user_name: 'Ваше имя'
+        user_name: 'Имя'
         user_email: 'Email'
   controllers:
     events:
@@ -42,6 +42,8 @@ ru:
       created: 'Вы подписаны на это событие'
       destroyed: 'Участник отписан'
       error: 'Подписка/отписка не сработала'
+      defined_errors:
+        existing_email: 'Пользователь с таким email уже зарегистрирован, авторизируйтесь или используйте другой email'
   app:
     name: 'Шашлыки'
     company: 'Хороший программист'

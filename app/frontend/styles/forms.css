@@ -1,3 +1,7 @@
-.const-width {
+.const-width-md, .const-width {
   width: 325px
+}
+
+.const-width-sm {
+  width: 220px
 }

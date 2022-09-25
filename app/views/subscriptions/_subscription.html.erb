@@ -1,8 +1,8 @@
-<span class="subscription">
+<div class="subscription">
   <% if subscription.user.present? %>
     <%= render partial: 'users/user', object: subscription.user %>
   <% else %>
-    <em><%= subscription.user_name %></em>
+    <div class="buffer-bottom-sm"><%= subscription.user_name %></div>
   <% end %>
 
   <% if current_user_can_edit?(subscription) && subscription.user == current_user %>
@@ -13,4 +13,4 @@
                      data: {confirm: t('.destroy_confirm')} %>
     </div>
   <% end %>
-</span>
+</div>
