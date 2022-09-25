@@ -28,6 +28,10 @@ ru:
       updated: 'Аккаунт успешно редактирован!'
       actions:
         change_password: 'Сменить пароль'
+    comments:
+      created: 'Комментарий создан'
+      error: 'Ошибка создани комментария'
+      destroyed: 'Комментарий удален'
   app:
     name: 'Шашлыки'
     company: 'Хороший программист'
@@ -50,6 +54,8 @@ ru:
     did_not_organize: 'Пользователь пока не организовал ни одного
           события'
     delete_my_account: 'Удалить мой аккаунт?'
+    delete_my_comment: 'Вы уверены, что хотите удалить этот комментарий?'
+    minimum_symbols: 'символов минимум'
   errors:
     one: '%{count} ошибка'
     few: '%{count} ошибки'
@@ -63,3 +69,4 @@ ru:
   edit:
     user: 'Редактировать пользователя'
     account: 'Редактировать профиль'
+    current_password: 'Текущий пароль'

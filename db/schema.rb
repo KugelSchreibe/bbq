@@ -10,7 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_09_22_225336) do
+ActiveRecord::Schema.define(version: 2022_09_24_123111) do
+
+  create_table "comments", force: :cascade do |t|
+    t.text "body"
+    t.string "user_name"
+    t.integer "event_id", null: false
+    t.integer "user_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["event_id"], name: "index_comments_on_event_id"
+    t.index ["user_id"], name: "index_comments_on_user_id"
+  end
 
   create_table "events", force: :cascade do |t|
     t.string "title"
@@ -34,5 +45,7 @@ ActiveRecord::Schema.define(version: 2022_09_22_225336) do
     t.datetime "remember_created_at"
   end
 
+  add_foreign_key "comments", "events"
+  add_foreign_key "comments", "users"
   add_foreign_key "events", "users"
 end
