@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_09_24_123111) do
+ActiveRecord::Schema.define(version: 2022_09_24_133627) do
 
   create_table "comments", force: :cascade do |t|
     t.text "body"
@@ -34,6 +34,17 @@ ActiveRecord::Schema.define(version: 2022_09_24_123111) do
     t.index ["user_id"], name: "index_events_on_user_id"
   end
 
+  create_table "subscriptions", force: :cascade do |t|
+    t.string "user_name"
+    t.string "user_email"
+    t.integer "event_id", null: false
+    t.integer "user_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["event_id"], name: "index_subscriptions_on_event_id"
+    t.index ["user_id"], name: "index_subscriptions_on_user_id"
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "name"
     t.string "email", default: "", null: false
@@ -48,4 +59,6 @@ ActiveRecord::Schema.define(version: 2022_09_24_123111) do
   add_foreign_key "comments", "events"
   add_foreign_key "comments", "users"
   add_foreign_key "events", "users"
+  add_foreign_key "subscriptions", "events"
+  add_foreign_key "subscriptions", "users"
 end
