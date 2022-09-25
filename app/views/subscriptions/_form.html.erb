@@ -1,5 +1,6 @@
 <%= form_for [@event, subscription] do |f| %>
   <% unless user_signed_in? %>
+    <%= render partial: 'partials/form_errors', locals: { model: subscription } %>
 
     <div class="form-group">
       <%= f.label :user_name %>

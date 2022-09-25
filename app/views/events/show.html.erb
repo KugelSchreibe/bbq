@@ -60,12 +60,13 @@
           <% else %>
             <h4>Будьте первым, кто подпишется!</h4>
           <% end %>
-
         </div>
 
-        <div class="buffer-top buffer-bottom">
-          <%= render partial: 'subscriptions/form', locals: {subscription: @new_subscription || @event.subscriptions.build} %>
-        </div>
+        <% unless current_user_can_edit?(@event) %>
+          <div class="buffer-top buffer-bottom">
+            <%= render partial: 'subscriptions/form', locals: {subscription: @new_subscription || @event.subscriptions.build} %>
+          </div>
+        <% end %>
       </div>
     </div>
   </div>
