@@ -1,4 +1,5 @@
 class CommentsController < ApplicationController
+  before_action :set_event, only: [:create, :destroy]
   before_action :set_comment, only: %i[destroy]
 
   def create
