@@ -6,14 +6,10 @@ class SubscriptionsController < ApplicationController
     @new_subscription = @event.subscriptions.build(subscription_params)
     @new_subscription.user = current_user
 
-    if using_email?(subscription_params[:user_email])
-      redirect_to @event, alert: t('controllers.subscriptions.defined_errors.existing_email')
+    if @new_subscription.save
+      redirect_to @event, notice: I18n.t('controllers.subscriptions.created')
     else
-      if @new_subscription.save
-        redirect_to @event, notice: I18n.t('controllers.subscriptions.created')
-      else
-        redirect_to @event, alert: I18n.t('controllers.subscriptions.error')
-      end
+      redirect_to @event, alert: I18n.t('controllers.subscriptions.error')
     end
   end
 
