@@ -30,7 +30,7 @@
           <%= render partial: 'photos/photo', collection: @event.photos.except(@new_photo) %>
         </div>
 
-        <% unless current_user_can_edit?(@event) %>
+        <% if current_user_can_edit?(@event) %>
           <div class="event-photo-form">
             <%= render partial: 'photos/form', locals: {photo: @new_photo || @event.photos.build} %>
           </div>
