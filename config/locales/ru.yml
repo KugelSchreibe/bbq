@@ -3,8 +3,12 @@ ru:
     models:
       user: 'Пользователь'
       event: 'Событие'
+      photo: 'Фотография'
     attributes:
+      photo:
+        photo: 'Фотография'
       user:
+        avatar: 'Аватарка'
         email: 'Email'
         name: 'Имя'
         password: 'Пароль'
@@ -34,6 +38,10 @@ ru:
       updated: 'Аккаунт успешно редактирован!'
       actions:
         change_password: 'Сменить пароль'
+    photos:
+      error: 'Что-то не так с фоткой'
+      created: 'Вы добавили фотографию к событию'
+      destroyed: 'Вы удалили фотку'
     comments:
       created: 'Комментарий создан'
       error: 'Ошибка создани комментария'
