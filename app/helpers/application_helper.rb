@@ -3,7 +3,7 @@ module ApplicationHelper
     if user.avatar?
       user.avatar.url
     else
-      asset_path('/uploads/user/default/user.png')
+      asset_path('/default_img/user.png')
     end
   end
 
@@ -11,7 +11,7 @@ module ApplicationHelper
     if user.avatar.file.present?
       user.avatar.thumb.url
     else
-      asset_path('/uploads/user/default/user.png')
+      asset_path('/default_img/user.png')
     end
   end
 
@@ -25,7 +25,7 @@ module ApplicationHelper
     if photos.any?
       photos.sample.photo.url
     else
-      asset_path('uploads/user/default/event.jpg')
+      asset_path('/default_img/event.jpg')
     end
   end
 
@@ -35,7 +35,7 @@ module ApplicationHelper
     if photos.any?
       photos.sample.photo.thumb.url
     else
-      asset_path('uploads/user/default/event_thumb.jpg')
+      asset_path('/default_img/event_thumb.jpg')
     end
   end
 end
