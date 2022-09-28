@@ -16,6 +16,7 @@ gem 'net-pop', require: false
 gem 'carrierwave'
 gem 'rmagick'
 gem 'fog-aws'
+gem 'mailjet'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
