@@ -83,11 +83,4 @@ Rails.application.configure do
     user_name: 'leejayka@yandex.ru',
     password: 'canatsejpeotzphs',
   }
-
-=begin
-  config.action_mailer.smtp_settings = {
-    address: "c2-178-216-97-111.elastic.cloud.croc.ru",
-    port: 2500
-  }
-=end
 end

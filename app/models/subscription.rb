@@ -30,13 +30,13 @@ class Subscription < ApplicationRecord
 
   def email_check
     unless User.find_by(email: user_email).nil?
-      errors.add(:user_email, 'Existing email')
+      errors.add(:user_email, t('controllers.subscriptions.defined_errors.existing_email'))
     end
   end
 
   def self_subscription
     if user == event.user
-      errors.add(:event, 'self_subscription')
+      errors.add(:event, t('controllers.subscriptions.defined_errors.self_subscription'))
     end
   end
 end
