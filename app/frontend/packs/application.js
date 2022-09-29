@@ -7,6 +7,9 @@ import Rails from "@rails/ujs"
 import * as ActiveStorage from "@rails/activestorage"
 import "../styles/aplication.scss"
 import "bootstrap/dist/js/bootstrap"
+import "jquery/src/jquery"
+import "./yandex_maps"
+import "../../../lib/lightbox-master/dist/ekko-lightbox"
 
 const images = require.context('../img', true)
 
