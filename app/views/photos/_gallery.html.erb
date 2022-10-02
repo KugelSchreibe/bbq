@@ -1,5 +1,11 @@
-<% image_title = "Добавил #{render partial: 'users/user', object: photo.user}" %>
-
-<%= link_to image_tag(photo.photo.thumb.url), photo.photo.url, data: {
-  toggle: 'lightbox', title: image_title, gallery: 'event-photos'
-} %>
+<div class="bg-mini-window">
+  <%= image_tag(photo.photo.url, class: 'full-size buffer-bottom buffer-top') %>
+  <div class="d-flex d-flex align-items-center justify-content-around buffer-bottom-sm">
+    <div class="buffer-top">
+      <%= render partial: 'users/user', object: @event.user %>
+    </div>
+    <div>
+      <%= button_to 'Удалить', event_photo_path(photo), method: :delete, form: {data: {'confirm': t('controllers.photos.warnings.before_delete')}}, class: 'btn btn-danger'%>
+    </div>
+  </div>
+</div>
