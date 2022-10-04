@@ -52,9 +52,6 @@ ru:
       created: 'Вы подписаны на это событие'
       destroyed: 'Участник отписан'
       error: 'Подписка/отписка не сработала'
-      defined_errors:
-        existing_email: 'Пользователь с таким email уже зарегистрирован, авторизируйтесь или используйте другой email'
-        self_subscription: 'Вы не можете подписаться на свое событие'
   app:
     photos: 'Фотографии'
     name: 'Шашлыки'
@@ -80,14 +77,14 @@ ru:
       event: 'Событие'
       datetime: 'Состоится'
       owner: 'Организатор'
-      subscription:
-        title: 'Новая подписка'
-        name: 'Имя'
-        email: 'Email'
-        author: 'Автор'
-        event: 'Событие'
-        datetime: 'Состоится'
-        owner: 'Организатор'
+    subscription:
+      title: 'Новая подписка'
+      name: 'Имя'
+      email: 'Email'
+      author: 'Автор'
+      event: 'Событие'
+      datetime: 'Состоится'
+      owner: 'Организатор'
   subscriptions:
     subscription:
       destroy_confirm: 'Вы уверены, что хотите удалить эту подписку?'
@@ -102,6 +99,13 @@ ru:
     one: '%{count} ошибка'
     few: '%{count} ошибки'
     many: '%{count} ошибок'
+    models:
+      subscription:
+        attributes:
+          email:
+            exiting_email: 'Этот Email уже авторизирован на сайте'
+          event:
+            selsubscription: 'Нельзя подписываться на свои события'
   registration:
     create_profile: 'Создать аккаунт'
     forgot_password: 'Забыли пароль?'

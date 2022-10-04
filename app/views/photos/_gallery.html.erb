@@ -5,7 +5,7 @@
       <%= render partial: 'users/user', object: @event.user %>
     </div>
     <div>
-      <%= button_to 'Удалить', event_photo_path(photo), method: :delete, form: {data: {'confirm': t('controllers.photos.warnings.before_delete')}}, class: 'btn btn-danger'%>
+      <%= button_to 'Удалить', event_photo_path(photo.event_id, photo.id), method: :delete, form: {data: {'confirm': t('controllers.photos.warnings.before_delete')}}, class: 'btn btn-danger'%>
     </div>
   </div>
 </div>
