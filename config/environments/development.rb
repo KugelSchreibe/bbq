@@ -80,7 +80,20 @@ Rails.application.configure do
     domain: "yandex.ru",
     authentication: "plain",
     enable_starttls_auto: true,
-    user_name: 'leejayka@yandex.ru',
-    password: 'canatsejpeotzphs',
+    user_name: 'serjaypiv',
+    password: 'sodfjyyhyywlepml',
   }
+
+=begin
+  # Mailer
+  config.action_mailer.smtp_settings = {
+    address:              'smtp.yandex.ru',
+    port:                 465,
+    domain:               'yandex.ru',
+    user_name:            'serjaypiv',
+    password:             'sodfjyyhyywlepml',
+    authentication:       'plain',
+    enable_starttls_auto: true
+  }
+=end
 end

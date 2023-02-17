@@ -54,7 +54,7 @@ ru:
       error: 'Подписка/отписка не сработала'
   app:
     photos: 'Фотографии'
-    name: 'Шашлыки'
+    name: 'MeetMyMen'
     company: 'Хороший программист'
     back: 'Назад'
     delete: 'Удалить'
